@@ -1,0 +1,2 @@
+class Shopevent < ApplicationRecord
+end

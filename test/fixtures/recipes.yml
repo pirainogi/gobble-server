@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  imgurl: MyString
+  instructions: MyText
+  preptime: 1
+  dishType: MyString
+  sourceUrl: MyString
+  servings: 1
+  whole30: false
+  keto: false
+  dairyFree: false
+  glutenFree: false
+  vegan: false
+  vegetarian: false
+  healthy: false
+
+two:
+  name: MyString
+  imgurl: MyString
+  instructions: MyText
+  preptime: 1
+  dishType: MyString
+  sourceUrl: MyString
+  servings: 1
+  whole30: false
+  keto: false
+  dairyFree: false
+  glutenFree: false
+  vegan: false
+  vegetarian: false
+  healthy: false
