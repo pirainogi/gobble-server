@@ -3,7 +3,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
     create_table :events do |t|
       t.datetime :date
       t.string :category
-      t.reference :user_id
+      t.references :user
 
       t.timestamps
     end

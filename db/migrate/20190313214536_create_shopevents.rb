@@ -1,8 +1,8 @@
 class CreateShopevents < ActiveRecord::Migration[5.2]
   def change
     create_table :shopevents do |t|
-      t.reference :event_id
-      t.reference :ingredient_id
+      t.references :event
+      t.references :ingredient
       t.integer :amount
       t.string :unit
 
