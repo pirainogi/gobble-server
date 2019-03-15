@@ -1,6 +1,6 @@
 class Recipeingredient < ApplicationRecord
 
-belongs_to :recipe
-has_many :ingredients
+belongs_to :recipe, required: false
+belongs_to :ingredient, required: false
 
 end

@@ -1,7 +1,9 @@
 class Ingredient < ApplicationRecord
 
-  belongs_to :recipeingredient
-  belongs_to :pantry
-  belongs_to :shopevent
+  has_many :recipeingredients
+  belongs_to :pantry, required: false
+  belongs_to :shopevent, required: false
+
+  validates :name, uniqueness: true
 
 end
