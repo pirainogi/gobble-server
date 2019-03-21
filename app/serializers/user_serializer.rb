@@ -1,10 +1,10 @@
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :name, :password_digest, :profile_pic, :bio, :allergies, :diet
 
-  has_many :recipeboxes
+  has_many :recipes
 
-  class RecipeboxSerializer < ActiveModel::Serializer
-    attributes :id, :recipe_id
+  class RecipeSerializer < ActiveModel::Serializer
+    attributes :id, :name, :imgurl, :instructions, :preptime, :dishType, :sourceUrl, :servings, :whole30, :keto, :dairyFree, :glutenFree, :vegan, :vegetarian, :healthy, :ingredients
   end
 
 end

@@ -1,8 +1,8 @@
 class Recipe < ApplicationRecord
 
-  belongs_to :recipebox, required: false
-  belongs_to :mealevent, required: false
-  belongs_to :prepevent, required: false
+  has_many :recipeboxes
+  belongs_to :mealevent
+  belongs_to :prepevent
   has_many :recipeingredients
   has_many :ingredients, through: :recipeingredients
 
