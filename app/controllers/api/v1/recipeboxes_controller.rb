@@ -15,7 +15,7 @@ class Api::V1::RecipeboxesController < ApplicationController
   # end
 
   def create
-    byebug
+    # byebug
     @recipebox = Recipebox.create(recipebox_params)
     if @recipebox.valid?
       render json: @recipebox, status: :accepted
