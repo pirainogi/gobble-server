@@ -10,9 +10,9 @@ class Api::V1::UsersController < ApplicationController
     render json: @user, status: :accepted
   end
 
-  def new
-    @user = User.new
-  end
+  # def new
+  #   @user = User.new
+  # end
 
   def create
     @user = User.create(user_params)
@@ -43,7 +43,7 @@ class Api::V1::UsersController < ApplicationController
 private
 
 def user_params
-  params.permit(:name)
+  params.require(:user).permit(:name, :username, :password, :bio, :profile_pic, :allergies, :diet)
 end
 
 
