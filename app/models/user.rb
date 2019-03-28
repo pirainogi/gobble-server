@@ -9,6 +9,6 @@ class User < ApplicationRecord
   has_one :pantry
 
   validates :username, uniqueness: true
-  has_secure_password
+  # has_secure_password
 
 end
