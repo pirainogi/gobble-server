@@ -13,6 +13,8 @@ Rails.application.routes.draw do
       resources :prepevents, only: [:index, :show, :new, :create, :edit, :update, :destroy]
       resources :shopevents, only: [:index, :show, :new, :create, :edit, :update, :destroy]
       resources :pantries, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+
+      post "/login", to: "auth#create"
     end
   end
 

@@ -10,24 +10,24 @@ class Api::V1::UsersController < ApplicationController
     render json: @user, status: :accepted
   end
 
-  # def create 
-  #   user = User.new(
-  #     name: params[:name],
-  #     username: params[:username],
-  #     password: params[:password],
-  #     profile_pic: params[:profile_pic],
-  #     bio: params[:bio],
-  #     allergies: params[:allergies],
-  #     diet: params[:diet]
-  #   )
-  #
-  #   if user.save
-  #     jwt = encode_token(user.id)
-  #     render json: {user: UserSerializer.new(user), jwt: jwt}
-  #   else
-  #     render json: {errors: user.errors.full_messages}
-  #   end
-  # end
+  def create
+    user = User.new(
+      name: params[:name],
+      email: params[:email],
+      password: params[:password],
+      profile_pic: params[:profile_pic],
+      bio: params[:bio],
+      allergies: params[:allergies],
+      diet: params[:diet]
+    )
+
+    if user.save
+      jwt = encode_token(user.id)
+      render json: {user: UserSerializer.new(user), jwt: jwt}
+    else
+      render json: {errors: user.errors.full_messages}
+    end
+  end
 
 
   # def new
