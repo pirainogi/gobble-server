@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :prepevents, through: :events
   has_one :pantry
 
-  validates :username, uniqueness: true
-  # has_secure_password
+  validates :email, uniqueness: true
+  has_secure_password
 
 end
