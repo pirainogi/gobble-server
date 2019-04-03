@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       resources :pantries, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
       post "/login", to: "auth#create"
+      get "/auto_login", to: "auth#auto_login"
     end
   end
 
