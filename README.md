@@ -1,4 +1,4 @@
-test 123 
+test 123
 
 # README
 
@@ -22,6 +22,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
-# omnomnom-server
