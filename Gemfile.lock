@@ -141,6 +141,7 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rb-readline (0.5.5)
+    require_all (2.0.0)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -190,6 +191,7 @@ DEPENDENCIES
   rails (~> 5.2.2)
   ransack
   rb-readline
+  require_all
   rest-client
   spring
   spring-watcher-listen (~> 2.0.0)

@@ -1,14 +1,13 @@
-
 require 'pry'
 require 'rest-client'
 
 APIkey = '' #RapidApi Key here
-
+#
 # Recipe.destroy_all
 # Ingredient.destroy_all
 # Recipeingredient.destroy_all
 
-recipedata = RestClient.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=100", {'X-RapidAPI-Key': APIkey, accept: :json})
+recipedata = RestClient.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=50", {'X-RapidAPI-Key': APIkey, accept: :json})
 
 # binding.pry
 parsedrecipe = JSON.parse(recipedata)
@@ -32,6 +31,7 @@ recipes.each do |r|
   healthy = r["veryHealthy"]
   ingredients = r["extendedIngredients"] #this is an array
 
+  # binding.pry
   currentRecipe = Recipe.create(name: name, imgurl: imgurl, instructions: instructions, preptime: preptime, dishType: dishType, sourceUrl: sourceUrl, servings: servings, whole30: whole30, keto: keto, dairyFree: dairyFree, glutenFree: glutenFree, vegan: vegan, vegetarian: vegetarian, healthy: healthy)
 
   ingredients.each do |i|

@@ -1,6 +1,6 @@
 class Shopevent < ApplicationRecord
 
-  belongs_to :events
-  has_many :recipes 
+  belongs_to :events, required: false
+  has_many :recipes
 
 end
