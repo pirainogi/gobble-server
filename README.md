@@ -20,11 +20,12 @@ Please find the React frontend repo at [Gooble-Client](https://github.com/pirain
 
 You will need `rails` and `bundle` installed on your computer in order to run this app. You will also need Postgres installed and running in order to create, migrate, and seed your database.
 
-In order to run this app, first clone this repo down onto your local machine and navigate to that directory. Then run  `bundle install` in order to install all of the necessary gems locally. At this point, it is recommended to create an API key so that you can seed your data: [Spoonacular](https://rapidapi.com/spoonacular/api/recipe-food-nutrition). **As you can see in the pricing model, you can request 500 recipes per day before you will be charged for access to their API.** Once you have added your own API key to the seeds file, run the following:
+In order to run this app, first clone this repo down onto your local machine and navigate to that directory. Then run `bundle install` in order to install all of the necessary gems locally. At this point, it is recommended to create an API key so that you can seed your data: [Spoonacular](https://rapidapi.com/spoonacular/api/recipe-food-nutrition). **As you can see in the pricing model, you can request 500 recipes per day before you will be charged for access to their API.** Once you have added your own API key to the seeds file, run the following:
 
 * `rails db:create`
 * `rails db:migrate`
-* `rails db:seed`
+* Add your API Key to the seeds.rb file in line 4 so that your API calls will be successful. **As a note, if you have forked and cloned this repo, if you commit your code to Github, your private API key will then be made public.** 
+* `rails db:seed` - This should print to your terminal the number of recipes that have been persisted to your local database. The default number of recipes that should be pulled from the API is 50. If you want to change this, revise the code in line 10 of the seeds.rb file. If you want to call the API multiple times, keep the code in lines 6-8 of the seeds.rb commented out and run `rails db:seed` again in order to retrieve more recipes. 
 
 Then run `rails s` in order to spin up your server.
 
@@ -32,6 +33,7 @@ Finally, clone the frontend repo down from [Gooble-Client](https://github.com/pi
 
 
 # Ruby Version 2.3.3
+# Rails Version 5.2.2
 ## Bundler Version 2.0.1
 
 ## Ruby Gems
