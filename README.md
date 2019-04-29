@@ -20,7 +20,7 @@ Please find the React frontend repo at [Gooble-Client](https://github.com/pirain
 
 You will need `rails` and `bundle` installed on your computer in order to run this app. You will also need Postgres installed and running in order to create, migrate, and seed your database.
 
-In order to run this app, first clone this repo down onto your local machine and navigate to that directory. Then run `bundle install` in order to install all of the necessary gems locally. At this point, it is recommended to create an API key so that you can seed your data: [Spoonacular](https://rapidapi.com/spoonacular/api/recipe-food-nutrition). **As you can see in the pricing model, you can request 500 recipes per day before you will be charged for access to their API.** Once you have added your own API key to the seeds file, run the following:
+In order to run this app, first clone this repo down onto your local machine and navigate to that directory. Then run `bundle install` in order to install all of the necessary gems locally. At this point, it is recommended to create an API key so that you can seed your data with [Spoonacular](https://rapidapi.com/spoonacular/api/recipe-food-nutrition). **As you can see in the pricing model, you can request 500 recipes per day before you will be charged for access to their API.** 
 
 * `rails db:create`
 * `rails db:migrate`
