@@ -1,6 +1,6 @@
 class Event < ApplicationRecord
 
-  belongs_to :user, , required: false
+  belongs_to :user, required: false
   has_many :mealevents
   has_one :recipe, through: :mealevents
   has_many :prepevents

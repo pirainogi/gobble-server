@@ -34,10 +34,8 @@ gem 'active_model_serializers'
 gem 'rb-readline'
 
 gem 'rest-client'
-gem 'unirest'
 gem 'pry'
-gem 'ransack'
-gem 'require_all'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
