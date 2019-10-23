@@ -11,10 +11,11 @@ A full service meal-prepping application with scheduling functionality so you ne
 * React.js
 * Javascript
 * HTML5 and CSS3 (semi-responsive)
+* PostgreSQL
 
 You will need to create an API key with RapidAPI in order to seed your data. **There is a limit to the amount of free data that you can seed from the API, so please be aware before you seed thousands of recipes.**
 
-Please find the React frontend repo at [Gooble-Client](https://github.com/pirainogi/gobble-client).
+Please find the React frontend repo at [Gobble-Client](https://github.com/pirainogi/gobble-client).
 
 ## Prerequisites
 
@@ -29,7 +30,7 @@ In order to run this app, first clone this repo down onto your local machine and
 
 Then run `rails s` in order to spin up your server.
 
-Finally, clone the frontend repo down from [Gooble-Client](https://github.com/pirainogi/gobble-client) onto your local machine and follow the instructions in the readme to start the application.
+Finally, clone the frontend repo down from [Gobble-Client](https://github.com/pirainogi/gobble-client) onto your local machine and follow the instructions in the readme to start the application.
 
 
 # Ruby Version 2.3.3
