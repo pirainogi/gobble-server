@@ -33,9 +33,9 @@ Then run `rails s` in order to spin up your server.
 Finally, clone the frontend repo down from [Gobble-Client](https://github.com/pirainogi/gobble-client) onto your local machine and follow the instructions in the readme to start the application.
 
 
-# Ruby Version 2.3.3
-# Rails Version 5.2.2
-## Bundler Version 2.0.1
+### Ruby Version 2.3.3
+### Rails Version 5.2.2
+### Bundler Version 2.0.1
 
 ## Ruby Gems
 * bcrypt
